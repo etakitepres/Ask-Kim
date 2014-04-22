@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="style.css" rel="stylesheet" type="text/css"/>
+
+<script language="javascript" type="text/javascript" src="sentencegenerator.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+
+<title>Chat with Kim</title>
+</head>
+
+<body>
+
+<div class="logo">
+	<img src="img/logo.png" alt="Ask Kim" class="logo">
+</div>
+
+<div class="container">
+	<img src="img/kim.png" id="kim">
+
+	<textarea id="askbox" placeholder="Type question here..."></textarea> <br>
+
+	<button id="ask" onclick="myFunction()">Ask!</button>
+
+	<div id="answerbox"></div>
+
+</div>
+
+
+
+
+
+<script>
+
+
+$ ("#askbox").on("keydown", function(event){
+	if(event.keyCode == 13) {
+		event.preventDefault();
+		myFunction();
+	}
+});
+
+
+function myFunction()
+{
+	event.preventDefault();
+	if (document.getElementById("askbox").value == ""){ return };	
+	var phrase=sentencegenerator.sentence();
+	document.getElementById("answerbox").innerHTML=phrase;
+	document.getElementById("askbox").value = "";
+	document.getElementById("askbox").setSelectionRange(0, 0);
+	
+}
+
+</script>
+
+<!--
+<button onclick="myFunction()">Ask!</button>
+
+<script>
+function myFunction()
+{
+var phrase = sentencegenerator.name();
+document.write("phrase");
+}
+</script>
+what -->
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,92 @@
+body {
+	background-color: #FFFFFF;
+	background-image: url(img/tile.png);
+	font-family: helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+button {
+	background-color: #DD45DD;
+	border: none;
+	margin: 21px 0 0 0;
+	color: white;
+	width: 150px;
+	height: 50px;
+	font-size: 18px;
+	outline: none;
+	cursor: pointer;
+	font-family: helvetica, sans-serif;
+}
+
+button:hover {
+	background-color: #DD6BDD;
+	outline: none;
+}
+
+#answerbox {
+	color: white;
+	font-size: 40px;
+	font-family: helvetica, sans-serif;
+	line-height: 1.4;
+	margin-top: 25px;
+}
+
+#askbox {
+	background-color: #DD6BDD;
+	width: 400px;
+	height: 200px;
+	text-align: top;
+	border: 4px solid #DD45DD;
+	resize: none;
+	color: white;
+	font-size: 24px;
+	font-family: helvetica, sans-serif;
+	margin: 33px 0 0 0;
+	padding: 10px;
+	outline: none;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	width: 703px;
+}
+
+#kim {
+	float: left;
+	width: 250px;
+	margin-right: 25px;
+}
+
+.logo {
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+::-webkit-input-placeholder {
+   font-family: helvetica, sans-serif;
+   color: white;
+   padding: 1px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-family: helvetica, sans-serif;
+   color: white;  
+   padding: 1px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family: helvetica, sans-serif;
+   color: white;  
+   padding: 1px;
+}
+
+:-ms-input-placeholder {  
+   font-family: helvetica, sans-serif;
+   color: white;  
+   padding: 1px;
+}
